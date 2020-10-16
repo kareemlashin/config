@@ -1,11 +1,11 @@
 {
-  "name": "learn",
-  "version": "1.0.0",
-  "description": "learn",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "kareem lashin 01006844225",
-  "license": "ISC"
+    "name": "learn",
+    "version": "1.0.0",
+    "description": "learn",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "kareem lashin 01006844225",
+    "license": "ISC"
 }
