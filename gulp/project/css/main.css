@@ -1,0 +1,17 @@
+.cl {
+  color: green;
+  transform: rotate(20deg);
+  transition: 1s all;
+  background: linear-gradient(#e98a00, #f5aa2f);
+}
+
+.one {
+  color: #09c;
+}
+
+.claaa {
+  color: green;
+  transform: rotate(20deg);
+  transition: 1s all;
+  background: linear-gradient(red, blue);
+}

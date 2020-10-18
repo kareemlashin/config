@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <aside></aside>
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <section></section>
+    <article></article>
+    <footer></footer>
+
+    <button></button>
+
+    <img src="" alt="">
+
+    <ol>
+        <li></li>
+    </ol>
+    <ul>
+        <li></li>
+    </ul>
+
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+
+    <p></p>
+
+    <div></div>
+
+    <span></span>
+
+    <form action="" method="post">
+
+        <input type="text" name="" minlength="" maxlength="" pattern="" required readonly />
+        <input type="checkbox" name="" minlength="" maxlength="" pattern="" required />
+        <input type="color" name="" minlength="" maxlength="" pattern="" required />
+        <input type="date" name="" minlength="" maxlength="" pattern="" required />
+        <input type="datetime" name="" minlength="" maxlength="" pattern="" required />
+        <input type="email" name="" minlength="" maxlength="" pattern="" required />
+        <input type="month" name="" minlength="" maxlength="" pattern="" required />
+        <input type="number" name="" minlength="" maxlength="" pattern="" required />
+        <input type="password" name="" minlength="" maxlength="" pattern="" required />
+        <input type="radio" name="" minlength="" maxlength="" pattern="" required />
+        <input type="tel" name="" minlength="" maxlength="" pattern="" required />
+        <input type="time" name="" minlength="" maxlength="" pattern="" required />
+        <input type="file" name="" minlength="" maxlength="" pattern="" required />
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </form>
+    <!-- 
+        
+    <video controls loop autoplay height="" width="">
+      <source src="" type="video/mp4" />
+    </video>
+
+    <audio controls loop autoplay height="" width="">
+      <source src="" type="audio/ogg" />
+    </audio>
+
+    <iframe src="" frameborder="0"></iframe>
+
+    -->
+    <ul>
+        <li class="time"></li>
+        <li class="time"></li>
+        <li class="time"></li>
+        <li class="time"></li>
+        <li class="time"></li>
+    </ul>
+
+    <script>
+        let time = Array.from(document.getElementsByClassName('time'));
+        let timex = new Date();
+        for (let x = 0; x < time.length; x++) {
+
+            function sec2str(t) {
+                var d = Math.floor(t / 86400),
+                    h = ('0' + Math.floor(t / 3600) % 24).slice(-2),
+                    m = ('0' + Math.floor(t / 60) % 60).slice(-2),
+                    s = ('0' + t % 60).slice(-2);
+                return (d > 0 ? d + 'd ' : '') + (h > 0 ? h + ':' : '') + (m > 0 ? m + ':' : '') + (t > 60 ? s : s + 's');
+            }
+
+            var m = new Date();
+            var dateString = m.getUTCFullYear() + "/" + (m.getUTCMonth() + 1) + "/" + m.getUTCDate() + " " + m.getUTCHours() + ":" + m.getUTCMinutes() + ":" + m.getUTCSeconds();
+            time[x].innerHTML = sec2str(timex);
+        }
+    </script>
+</body>
+
+
+</html>

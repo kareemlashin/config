@@ -1,0 +1,7 @@
+@mixin name(){
+    
+    color: green;
+    transform: rotate(20deg);
+    transition: 1s all;
+    background: linear-gradient(red, blue);
+}
